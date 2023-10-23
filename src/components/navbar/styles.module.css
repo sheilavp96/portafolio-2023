@@ -1,0 +1,17 @@
+.appbar {
+  width: 100%;
+  /* margin: 0px; */
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+}
+.list:hover {
+  color: #6563ff;
+}
