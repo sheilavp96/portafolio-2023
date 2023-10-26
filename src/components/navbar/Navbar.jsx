@@ -7,14 +7,21 @@ import styles from "./styles.module.css";
 import { listAppBar } from "./utils/list";
 export default function Navbar() {
   return (
-    <AppBar position="static" style={{ width: "100%" }}>
-      <Toolbar className={styles.appbar}>
-        {listAppBar.map((list) => (
-          <Typography key={list.id} variant="h6" component="div" className={styles.list}>
-            {list.name}
-          </Typography>
-        ))}
-      </Toolbar>
-    </AppBar>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar className={styles.toolbar}>
+          {listAppBar.map((list) => (
+            <Typography
+              key={list.id}
+              variant="h6"
+              component="div"
+              className={styles.list}
+            >
+              {list.name}
+            </Typography>
+          ))}
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 }

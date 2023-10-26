@@ -1,6 +1,7 @@
 import React from "react";
 import AboutText from "./AboutText";
-import perfil from "../../assets/perfil.png";
+//import perfil from "../../assets/perfil.png";
+import perfil from "../../assets/mia.png";
 import styles from "./styles.module.css";
 
 export default function About() {
@@ -10,11 +11,11 @@ export default function About() {
       <div
         style={{
           width: "40%",
-          //   margin: "auto",
-          //   display: "flex",
-          //   flexDirection: "center",
-          //   alignItems: "center",
-          //   padding: "0px",
+          // //   margin: "auto",
+          // //   display: "flex",
+          // //   flexDirection: "center",
+          // //   alignItems: "center",
+          // //   padding: "0px",
         }}
       >
         <img src={perfil} alt="foto-perfil" className={styles.photo} />

@@ -5,7 +5,7 @@ const AboutText = () => {
   return (
     <div className={styles.divText}>
       <h1 style={{ color: "#6563ff", margin: "10px", fontSize: "40px" }}>
-        Hi I'am Sheila
+        Hi I'am lorem ipsum
       </h1>
       <h3 style={{ color: "#696969", margin: "10px", fontSize: "22px" }}>
         Frontend developer
