@@ -1,6 +1,6 @@
 import React from "react";
 import AboutText from "./AboutText";
-//import perfil from "../../assets/perfil.png";
+//import perfil from "../../assets/imagen.png";
 import perfil from "../../assets/mia.png";
 import styles from "./styles.module.css";
 
