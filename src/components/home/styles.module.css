@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.divText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 5px;
+  height: 80vh;
+  padding: 0px 2rem;
+  /* padding: 2rem;
+  padding-bottom: 5rem; */
+}
+.divText h1 {
+  color: #373a3c;
+  margin: 10px;
+  font-size: 94px;
+}
+.title {
+  color: #ff335f;
+  margin: 10px;
+  font-size: 40px;
+}
+.text {
+  margin: 10px;
+  font-size: 32px;
+  color: #373a3c;
+}

@@ -1,25 +1,25 @@
-import React from "react";
-import AboutText from "./AboutText";
-import perfil from "../../assets/imagen.png";
-//import perfil from "../../assets/mia.png";
+import { AboutInfo } from "./AboutInfo";
+import { AboutText } from "./AboutText";
 import styles from "./styles.module.css";
+// import { listSkills } from "../about/utils/list";
 
-export default function About() {
+export const About = () => {
   return (
     <div className={styles.container}>
       <AboutText />
-      <div
-        style={{
-          width: "40%",
-          // //   margin: "auto",
-          // //   display: "flex",
-          // //   flexDirection: "center",
-          // //   alignItems: "center",
-          // //   padding: "0px",
-        }}
-      >
-        <img src={perfil} alt="foto-perfil" className={styles.photo} />
-      </div>
+      <AboutInfo />
+      {/* <div className={styles.container_skill}>
+        {listSkills.map((skill) => {
+          return (
+            <div key={skill.name} className={styles.item}>
+              <figure className={styles.item_img}>
+                <img src={skill.img} />
+              </figure>
+              <h3 className={styles.text}>{skill.name}</h3>
+            </div>
+          );
+        })}
+      </div> */}
     </div>
   );
-}
+};
