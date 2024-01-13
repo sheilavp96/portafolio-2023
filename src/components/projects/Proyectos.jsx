@@ -1,7 +1,12 @@
-import React from "react";
+import { ProjecText } from "./ProjecText";
+import styles from "./styles.module.css";
 
 const Proyectos = () => {
-  return <div>Proyectos</div>;
+  return (
+    <div className={styles.container}>
+      <ProjecText />
+    </div>
+  );
 };
 
 export default Proyectos;
