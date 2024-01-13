@@ -1,6 +1,6 @@
 export const listAppBar = [
   { name: "Sheila", id: "01" },
-  { name: "Skills", id: "02" },
-  { name: "Qualifications", id: "03" },
-  { name: "Portfolio", id: "04" },
+  { name: "About", id: "02" },
+  { name: "Projects", id: "03" },
+  { name: "Contact", id: "04" },
 ];

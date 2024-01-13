@@ -6,10 +6,13 @@ import styles from "./styles.module.css";
 
 export default function Navbar() {
   return (
-    <Box sx={{ flexGrow: 1, background: "none", position: "static" }}>
+    <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position="static"
-        sx={{ boxShadow: "none", padding: "30px", background: "none" }}
+        sx={{
+          boxShadow: "0 10px 100px rgba(0,0,0,.1)",
+          padding: "30px",
+          background: "#ffffff",
+        }}
       >
         <Toolbar className={styles.toolbar}>
           <Stack className={styles.stack} direction="row" spacing={2}>
