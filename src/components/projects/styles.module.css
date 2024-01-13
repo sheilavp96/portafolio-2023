@@ -35,13 +35,36 @@
   font-size: 20px;
   text-align: center;
 }
-.div-project {
-  outline: 2px solid red;
+
+.container-project {
+  width: 60%;
+  margin-top: 30px;
+}
+.card {
   display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 8px;
 }
-.project-img {
-  width: 50%;
+.card:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-.project-info {
-  width: 50%;
+.card:hover strong {
+  color: #ff335f;
+}
+.card:hover img {
+  box-shadow: 8;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  width: 70%;
+  padding: 0px 30px;
 }

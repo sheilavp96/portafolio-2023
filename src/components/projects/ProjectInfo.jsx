@@ -1,3 +1,4 @@
+import { CardContent, CardMedia, Typography } from "@mui/material";
 import { projectList } from "./utils/list";
 import styles from "./styles.module.css";
 
@@ -7,12 +8,28 @@ export const ProjectInfo = () => {
     <div className={styles["container-project"]}>
       {projectList.map((project) => {
         return (
-          <div key={project.name} className={styles["div-project"]}>
-            <div className={styles["project-img"]}>
-              <img alt={project.name} src={project.img} style={{ width: "100%" }} />
+          <div className={styles.card} key={project.name}>
+            <CardMedia
+              component="img"
+              sx={{
+                width: "30%",
+                height: 140,
+                objectFit: "contain",
+                borderRadius: "5px",
+              }}
+              alt="Live from space album cover"
+              image={project.img}
+            />
+            <div className={styles["card-text"]}>
+              <div>
+                <Typography component="div" variant="h5" className={styles.name}>
+                  <strong>{project.name}</strong>
+                </Typography>
+                <Typography variant="subtitle1" color="text.secondary" component="div">
+                  {project.description}
+                </Typography>
+              </div>
             </div>
-
-            <p className={styles["project-info"]}> {project.name}</p>
           </div>
         );
       })}
