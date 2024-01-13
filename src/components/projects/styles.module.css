@@ -35,3 +35,13 @@
   font-size: 20px;
   text-align: center;
 }
+.div-project {
+  outline: 2px solid red;
+  display: flex;
+}
+.project-img {
+  width: 50%;
+}
+.project-info {
+  width: 50%;
+}
