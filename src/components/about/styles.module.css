@@ -90,7 +90,7 @@ h3 {
   background: #ff335f;
   color: #ffffff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 710px) {
   .container {
     padding: 10px;
     /* padding-top: 35px; */
@@ -99,13 +99,13 @@ h3 {
 
   .div-info {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .about-me {
-    width: 100%;
-    padding: 0px;
+    width: 80%;
   }
   .about-skills {
-    width: 100%;
-    padding: 0px;
+    width: 80%;
   }
 }
