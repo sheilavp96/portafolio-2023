@@ -3,7 +3,7 @@ import { Button, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-scroll";
 
-export default function MenuBurguer({ listAppBar }) {
+export default function MenuBurguer(listAppBar) {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -41,13 +41,26 @@ export default function MenuBurguer({ listAppBar }) {
           horizontal: "left",
         }}
       >
-        {listAppBar?.map((list) => (
-          <MenuItem onClick={handleClose}>
-            <Link key={list.id} to={`section--${list.id}`} smooth={true} duration={1000}>
-              <b>{list.id} </b>
+        {listAppBar?.listAppBar.map((list) => (
+          <MenuItem onClick={handleClose} key={list.id}>
+            {list.id === "04" ? (
+              <a
+                style={{ color: "#000000", textDecoration: "none" }}
+                href="https://www.linkedin.com/in/sheilavp96/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <b>{list.id} </b>
+                {list.name}
+              </a>
+            ) : (
+              <Link to={`section--${list.id}`} smooth={true} duration={1000}>
+                <b>{list.id} </b>
 
-              {list.name}
-            </Link>
+                {list.name}
+              </Link>
+            )}
           </MenuItem>
         ))}
       </Menu>
