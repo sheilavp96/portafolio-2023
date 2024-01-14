@@ -109,3 +109,19 @@ h3 {
     width: 80%;
   }
 }
+@media screen and (max-width: 514px) {
+  .container_skill li {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container_skill li {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container_skill li {
+    width: auto;
+    margin: auto;
+  }
+}

@@ -1,8 +1,18 @@
-import { CardMedia, Chip, Stack, Typography } from "@mui/material";
+import { CardMedia, Chip, Stack, Typography, createTheme } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { projectList } from "./utils/list";
 import styles from "./styles.module.css";
-
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 700,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+});
 export const ProjectInfo = () => {
   console.log(projectList);
   return (
@@ -17,6 +27,10 @@ export const ProjectInfo = () => {
                 height: 140,
                 objectFit: "contain",
                 borderRadius: "5px",
+                [theme.breakpoints.down("sm")]: {
+                  height: 200,
+                  width: "60%",
+                },
               }}
               alt="Live from space album cover"
               image={project.img}

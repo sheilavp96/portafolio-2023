@@ -79,3 +79,23 @@
   padding: 0px 30px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1169px) {
+  .container-project {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container-project {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+  .card-text {
+    margin-top: 20px;
+    height: auto;
+  }
+}
