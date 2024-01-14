@@ -1,6 +1,6 @@
-import { Box, Toolbar, Typography, AppBar } from "@mui/material";
+import { Link } from "react-scroll";
+import { Box, Toolbar, Typography, AppBar, Avatar, Stack } from "@mui/material";
 import { listAppBar } from "./utils/list";
-import { Avatar, Stack } from "@mui/material";
 import perfil from "../../assets/perfil.png";
 import styles from "./styles.module.css";
 import "animate.css/animate.min.css";
@@ -11,7 +11,7 @@ export default function Navbar() {
       <AppBar
         sx={{
           boxShadow: "0 10px 100px rgba(0,0,0,.1)",
-          padding: "30px",
+          padding: "20px",
           background: "#ffffff",
         }}
       >
@@ -27,16 +27,23 @@ export default function Navbar() {
           </Stack>
           <div className={styles["list-menu"]}>
             {listAppBar.map((list) => (
-              <Typography
+              <Link
                 key={list.id}
-                variant="p"
-                component="div"
-                className={styles.list}
+                to={`section--${list.id}`}
+                smooth={true}
+                duration={1000}
               >
-                <b>{list.id} </b>
+                <Typography
+                  key={list.id}
+                  variant="p"
+                  component="div"
+                  className={styles.list}
+                >
+                  <b>{list.id} </b>
 
-                {list.name}
-              </Typography>
+                  {list.name}
+                </Typography>
+              </Link>
             ))}
           </div>
         </Toolbar>

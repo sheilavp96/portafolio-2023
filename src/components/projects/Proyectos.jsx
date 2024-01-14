@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const Proyectos = () => {
   return (
-    <div className={styles.container}>
+    <div id="section--03" className={styles.container}>
       <ProjecText />
       <ProjectInfo />
     </div>

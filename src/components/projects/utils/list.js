@@ -12,11 +12,4 @@ export const projectList = [
       },
     ],
   },
-  {
-    name: "React quiz 2",
-    link: "https://react-quiz.sheilavp.click/",
-    img: quiz,
-    description: "Video course that teaches how to build a web a.",
-    lenguaje: [],
-  },
 ];

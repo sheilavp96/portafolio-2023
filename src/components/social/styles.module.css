@@ -1,0 +1,31 @@
+.section-social {
+  width: 55px;
+  position: fixed;
+  top: 45vh;
+  right: 20px;
+  padding: 0;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.fig {
+  width: 100%;
+  margin: 0;
+}
+
+.img-g {
+  width: 100%;
+}
+
+.up {
+  width: 36px;
+  background: #8280fa;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}

@@ -6,6 +6,7 @@
   align-items: center;
   gap: 20px;
   background-color: #ffffff;
+  padding-top: 35px;
 }
 .div-text {
   display: flex;
